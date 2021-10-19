@@ -62,7 +62,7 @@ html, body {
 }
 
 /*** MEDIA ***/
-@media (max-height: 700px) {
+@media (max-height: 800px) {
 	.cover > div {
 		left: unset;
 		position: relative;
