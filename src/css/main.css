@@ -922,7 +922,7 @@ button.orange:focus {
 	.banner,
 	.navigation,
 	.footer .icons {
-		display: none;
+		display: none !important;
 	}
 	.main .container {
 		padding-right: 25px;
