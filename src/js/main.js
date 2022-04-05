@@ -53,6 +53,22 @@ $(function() {
 	$('a:external').attr('target', '_blank');
 });
 
+// copy links to anchors when clicked
+$(function() {
+	$('h1, h2, h3, h4, h5, h6').css('cursor', 'pointer');
+	$('h1, h2, h3, h4, h5, h6').click(function(event) {
+		let copy = document.createElement('input');
+		copy.value = window.location.href.split(/[?#]/)[0] + "#" + event.target.id;
+		document.body.appendChild(copy);
+		copy.select();
+		document.execCommand('copy');
+		document.body.removeChild(copy);
+		if ($(this).find('.copy-clipboard').length == 0) {
+			$('<i class="material-icons copy-clipboard" style="font-size: 0.75em; margin-left: 10px;">content_copy</i>').appendTo(this).delay(2000).queue(function() { $(this).remove(); });
+		}
+	});
+});
+
 // resizing elements to force footer at bottom
 $(function() {
 	$('div.container:not(.footer)').last().css('min-height', ($(window).outerHeight() - $('body').outerHeight() + $('div.container:not(.footer)').last().outerHeight()));
