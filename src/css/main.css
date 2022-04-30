@@ -1018,6 +1018,9 @@ button.orange:focus {
 	}
 	.accordion > div {
 		max-height: unset;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		visibility: visible;
 	}
 	.countdown > div {
 		background-color: transparent !important;
