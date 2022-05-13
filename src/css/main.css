@@ -264,7 +264,7 @@ div#wrap {
 	padding-top: 18px;
 	padding-bottom: 15px;
 	text-decoration: none;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 .banner,
 .banner.blue {
