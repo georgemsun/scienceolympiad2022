@@ -202,7 +202,6 @@ div#wrap {
 }
 .main img.graphic {
 	content: url(/src/img/figures/shuttle-background-bottom.svg);
-	min-height: 60px;
 }
 .main .tiles > div {
 	margin-top: -10px;
